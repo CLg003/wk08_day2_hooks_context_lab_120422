@@ -12,7 +12,6 @@ const MainPage = () => {
 
     const [name, setName] = useState('Stranger');
     const [goal, setGoal] = useState(1);
-    // const [isModalOpen, setIsModalOpen] = useState(true);
 
     const handleNameChange = (e) => {
         setName(e.target.value)
@@ -21,10 +20,6 @@ const MainPage = () => {
     const handleGoalChange = (e) => {
         setGoal(parseInt(e.target.value))
     }
-
-    // const toggleModal = () => {
-    //     setIsModalOpen(!isModalOpen);
-    //   }
 
     let {chosenState, handleToggle} = useToggle(true);
 
